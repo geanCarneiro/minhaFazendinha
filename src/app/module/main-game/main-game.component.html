@@ -1,0 +1,11 @@
+<header>
+    <div class="dinheiroDisplay" tabindex="0" [attr.aria-label]="'dinheiro disponível ' + ariaLabelDinheiro((player().dinheiro | shortNumber))">
+        <span class="material-symbols-outlined dinheiro-icon" >paid</span> 
+        {{player().dinheiro | shortNumber}}
+    </div>
+</header>
+<main>
+    <img tabindex="0" role="button" src="game/plantacao.png" alt="Plantação"/>
+    <img tabindex="0" role="button" src="game/inventario.png" alt="Inventário"/>
+    <img tabindex="0" role="button" src="game/loja.png" alt="Loja"/>
+</main>

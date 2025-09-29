@@ -1,0 +1,48 @@
+:host {
+    background-image: url('/game/grass.jpg');
+    background-size: 200px 200px;
+    background-clip: padding-box;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+
+    header {
+        background: #ffa200;
+        background: linear-gradient(180deg,rgba(255, 162, 0, 1) 70%, rgba(255, 211, 135, 1) 100%);
+        display: flex;
+        height: 7%;
+        align-items: center;
+        padding-inline: 0.5rem;
+
+        .dinheiroDisplay{
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 1.5%;
+            border-radius: 1rem;
+            width: 25%;
+            justify-content: space-between;
+
+            .dinheiro-icon {
+                color: rgb(255, 145, 0);
+            }
+
+            .dinheiro-value {
+                padding-right: 5%;
+            }
+        }
+    }
+
+    main {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(auto-fill, 45%);
+        place-items: center;
+
+        img {
+            width: 90%;
+        }
+    }
+}
